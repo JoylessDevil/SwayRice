@@ -1,0 +1,131 @@
+*{
+font-family: "JetBrainsMono";
+font-weight: normal;
+min-height: 0;
+/* set font-size to 100% if font scaling is set to 1.00 using nwg-look */
+font-size: 100%;
+font-feature-settings: '"zero", "ss01", "ss02", "ss03", "ss04", "ss05", "cv31"';
+}
+
+/*window#waybar {
+    background: rgba(21,1,2,0.7);
+}
+window > box {
+    margin: 1px 2px 2px;
+    color: #ff0000;
+    border: 2px solid #ff0000;
+    border-radius: 20px;
+}*/
+
+#waybar {
+    /*background-color: rgba(21,1,2,0.3);*/
+    background-color: transparent;
+}
+
+tooltip {
+    background-color: rgba(255,0,0,0.3);
+    border-radius: 20px;
+    border: 2px solid #ff0000;
+}
+
+tooltip label{
+    color: black;
+    padding: 0px 10px;
+}
+/*-----module groups----*/
+.modules-center {
+  background-color: black;
+  border: 2 solid #ff0000;       
+  border-radius: 0 0 0 0;       
+  color: #ff0000;
+  padding: 5 0 5 0;
+}
+
+.modules-right {
+  background-color: black;
+  border: 2 solid #ff0000;       
+  border-radius: 0 0 0 0;       
+  color: #ff0000;
+  padding: 5 0 5 0;
+}
+
+/* Keep left group clean */
+.modules-left {
+  background-color: transparent;
+  border: 0 solid #ff0000;       
+  border-radius: 0 0 0 0;       
+  color: #ff0000;
+  padding: 0;
+}
+
+/*-----modules indv----*/
+#workspaces button {
+    padding: 0 0 0 0;
+    margin: 2;
+    background-color: black;
+    border: 2 solid #ff0000;
+    border-radius: 0;
+}
+#workspaces button:hover {
+    padding: 0 5 0 0;
+}
+
+#workspaces button.focused {
+    padding: 0 20 0 0;
+    border: 2 solid #ff0000;
+    background-color: black;
+}
+
+#workspaces {
+    margin: 0 0 0 0;
+}
+
+@keyframes blink {
+    to {
+        color: #000000;
+    }
+}
+
+#clock {
+
+    margin: 0 0 0 10;
+
+}
+
+#custom-cava {
+    margin: 0 5 0 0;
+}
+
+#network {
+
+    margin: 0 0 0 10;
+
+}
+
+#battery {
+
+    margin: 0 10 0 10;
+
+}
+
+#pulseaudio {
+
+    margin: 0 0 0 10;
+
+}
+
+#bluetooth {
+
+    margin: 0 0 0 10;
+
+}
+
+#memory {
+
+    margin: 0 0 0 10;
+
+}
+
+#waybar.empty, #waybar.tiled, #waybar.floating {
+    background-color: transparent;
+}
